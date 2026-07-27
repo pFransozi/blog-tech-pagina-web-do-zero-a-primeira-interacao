@@ -1,111 +1,205 @@
-# Blog Tech — HTML, CSS, JavaScript, Git e GitHub Pages
+# 🌐 Meu primeiro site com GitHub
 
-Este repositório foi pensado como uma trilha prática para estudantes iniciantes. A ideia é construir um pequeno blog interativo do zero e, ao mesmo tempo, aprender a organizar arquivos, versionar o projeto com Git, publicar no GitHub e disponibilizar o resultado com GitHub Pages.
+> Um projeto guiado para criar, editar, versionar e publicar um pequeno blog **sem instalar programas**.
 
-## Resultado final
+Neste projeto você vai trabalhar com:
 
-O site pronto está na pasta [`docs/`](docs/). O GitHub Pages pode publicar diretamente essa pasta a partir da branch `main`.
+**GitHub.com → github.dev → GitHub Pages**
 
-## Como estudar este repositório
+Não vamos usar terminal, comandos Git ou VS Code instalado no computador.
 
-A pasta [`etapas/`](etapas/) contém snapshots progressivos do projeto:
+---
 
-| Etapa | O que é aprendido |
-| --- | --- |
-| 01 | Primeiro `index.html` e tags básicas |
-| 02 | Estrutura semântica com `header` e `main` |
-| 03 | CSS separado em arquivo próprio |
-| 04 | Imagem, box model e Flexbox |
-| 05 | Primeiro botão interativo com JavaScript |
-| 06 | Vários botões com `querySelectorAll` e `forEach` |
-| 07 | Vários posts com `article` |
-| 08 | Site final responsivo com reações de curtir/descurtir |
+## 🧭 Antes de começar
 
-Abra uma etapa, leia o `README.md` dela e compare o código com a etapa anterior.
+Você vai usar este material como apoio:
 
-## Fluxo recomendado com VS Code + GitHub
+👉 **Guia de consulta rápida do GitHub**  
+https://pfransozi.github.io/github-guia-consulta-rapida-em/
 
-### 1. Clone o repositório
+Quando esquecer onde clicar no GitHub, consulte o guia e depois volte para este projeto.
 
-No terminal do VS Code:
+---
 
-```bash
-git clone URL_DO_SEU_REPOSITORIO
-cd NOME_DO_REPOSITORIO
-code .
-```
+# 🎯 O objetivo
 
-### 2. Faça uma alteração
-
-Edite um arquivo, salve e confira o resultado no navegador.
-
-### 3. Veja o que mudou
-
-```bash
-git status
-git diff
-```
-
-### 4. Registre a alteração
-
-```bash
-git add .
-git commit -m "Ajusta conteúdo do blog"
-```
-
-### 5. Envie ao GitHub
-
-```bash
-git push
-```
-
-## Publicando com GitHub Pages
-
-Este projeto usa a pasta `docs/` como fonte do site.
-
-No GitHub:
-
-1. Abra o repositório.
-2. Acesse **Settings**.
-3. No menu lateral, abra **Pages**.
-4. Em **Build and deployment**, escolha **Deploy from a branch**.
-5. Selecione a branch `main`.
-6. Selecione a pasta `/docs`.
-7. Salve.
-
-Depois da publicação, o endereço normalmente segue o formato:
+No final, você terá um site parecido com este:
 
 ```text
-https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/
+┌──────────────────────────────────────┐
+│            🚀 Meu blog tech          │
+│  aprendendo tecnologia passo a passo │
+├──────────────────────────────────────┤
+│  💻 Meu primeiro post                │
+│  Um pequeno texto...                 │
+│  ❤️ 0   👍 0                         │
+├──────────────────────────────────────┤
+│  🌐 Publicando na internet           │
+│  Outro pequeno texto...              │
+│  ❤️ 0   👍 0                         │
+└──────────────────────────────────────┘
 ```
 
-> Observação: o GitHub Pages também pode ser publicado por GitHub Actions. Para este laboratório, a publicação direta da branch é propositalmente mais simples.
-
-## Estrutura do projeto
+E ele ficará disponível em um endereço semelhante a:
 
 ```text
-blog-tech-github-pages/
-├── README.md
-├── GUIA-GIT-GITHUB.md
-├── etapas/
-│   ├── 01-html-basico/
-│   ├── 02-html-semantico/
-│   ├── 03-css-basico/
-│   ├── 04-layout-flex/
-│   ├── 05-javascript-interacao/
-│   ├── 06-multiplos-botoes/
-│   ├── 07-multiplos-posts/
-│   └── 08-site-final/
-└── docs/
-    ├── index.html
-    ├── css/
-    │   └── style.css
-    ├── js/
-    │   └── script.js
-    └── assets/
-        └── blog-tech.svg
+https://SEU-USUARIO.github.io/meu-blog-tech/
 ```
 
-## Desafio final para o estudante
+---
 
-Faça uma mudança autoral no site, registre a alteração em um commit e publique a nova versão no GitHub Pages. Exemplos: trocar o tema, criar um novo post, alterar a imagem, adicionar uma nova reação ou melhorar a responsividade.
+# 🗺️ Como vamos chegar lá
+
+| Missão | O que você aprende | Resultado |
+|---|---|---|
+| 00 | criar o primeiro arquivo | aparece um título |
+| 01 | organizar o HTML | a página ganha estrutura |
+| 02 | criar um post | usamos `header`, `main` e `article` |
+| 03 | adicionar CSS | o site ganha cores e espaçamento |
+| 04 | usar imagens | o post ganha um elemento visual |
+| 05 | organizar com Flexbox | imagem e texto ficam lado a lado |
+| 06 | criar uma curtida | JavaScript responde ao clique |
+| 07 | usar vários botões | cada reação funciona sozinha |
+| 08 | criar vários posts | o blog passa a ter vários artigos |
+| 09 | separar os arquivos | HTML, CSS e JavaScript ficam organizados |
+
+📁 Dentro da pasta [`etapas`](./etapas/) existe uma cópia do código ao final de cada missão.
+
+---
+
+# 🚦 Como trabalhar durante a aula
+
+## 1. Crie seu próprio repositório
+
+Use um nome simples, por exemplo:
+
+```text
+meu-blog-tech
+```
+
+Marque a opção de criar o repositório com um `README`.
+
+> 💡 **Repositório** é a pasta do projeto dentro do GitHub.
+
+---
+
+## 2. Abra o editor do GitHub
+
+Dentro do seu repositório, pressione:
+
+```text
+.
+```
+
+O endereço muda de:
+
+```text
+github.com/...
+```
+
+para:
+
+```text
+github.dev/...
+```
+
+Você verá um editor parecido com o VS Code, mas ele funciona no navegador.
+
+> 🛟 O ponto não abriu o editor?  
+> Troque `github.com` por `github.dev` no endereço do navegador.
+
+---
+
+## 3. Faça uma mudança pequena
+
+Crie ou edite o arquivo indicado na missão.
+
+Depois:
+
+1. abra **Source Control** na lateral;
+2. confira os arquivos alterados;
+3. escreva uma mensagem curta;
+4. clique em **Commit & Push**.
+
+### 💬 Exemplo de mensagem
+
+```text
+Cria a página inicial
+```
+
+> 🧠 Pense no commit como uma **foto do projeto naquele momento**.
+
+---
+
+## 4. Publique com GitHub Pages
+
+Depois de criar o primeiro `index.html`:
+
+**GitHub → Settings → Pages**
+
+Em **Build and deployment**:
+
+```text
+Source: Deploy from a branch
+Branch: main
+Folder: /(root)
+```
+
+Salve.
+
+A partir daí, cada **Commit & Push** atualiza o site publicado.
+
+> ⏳ A atualização não é sempre instantânea. Espere alguns minutos e atualize a página.
+
+---
+
+# 🧩 Regra de ouro
+
+Durante a atividade, siga este ciclo:
+
+```text
+✏️ editar
+   ↓
+💾 Commit & Push
+   ↓
+🌐 abrir o site
+   ↓
+👀 observar o resultado
+   ↓
+🔁 continuar
+```
+
+Não tente mudar muitas coisas ao mesmo tempo.
+
+---
+
+# 🚀 Comece aqui
+
+Abra:
+
+👉 [`ROTEIRO-DO-ALUNO.md`](./ROTEIRO-DO-ALUNO.md)
+
+Ele mostra exatamente o que fazer em cada missão.
+
+---
+
+# 🆘 Travou?
+
+Antes de apagar tudo:
+
+1. respire;
+2. compare seu código com a pasta da missão;
+3. procure chaves `{ }`, sinais `< >` e aspas `" "`;
+4. confira se o nome dos arquivos está correto;
+5. consulte o **Guia de GitHub**.
+
+Erros fazem parte da programação. O importante é descobrir **onde o comportamento começou a ficar diferente do esperado**.
+
+---
+
+## 📚 Referências técnicas
+
+- GitHub.dev: https://docs.github.com/pt/codespaces/the-githubdev-web-based-editor
+- GitHub Pages: https://docs.github.com/pt/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+
+> Este repositório é um material educacional. O código foi escrito para ser pequeno, legível e fácil de modificar.
