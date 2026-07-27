@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 560" role="img" aria-labelledby="title desc">
+  <title id="title">Janela de código</title>
+  <desc id="desc">Ilustração abstrata de uma página web sendo construída com código.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#eef4ff"/>
+      <stop offset="1" stop-color="#dbe9ff"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0" stop-color="#194f9b"/>
+      <stop offset="1" stop-color="#4a8ce8"/>
+    </linearGradient>
+  </defs>
+  <rect width="760" height="560" rx="46" fill="url(#bg)"/>
+  <rect x="72" y="78" width="616" height="402" rx="24" fill="#fff" stroke="#cbd9ed" stroke-width="3"/>
+  <rect x="72" y="78" width="616" height="58" rx="24" fill="#17375f"/>
+  <rect x="72" y="111" width="616" height="25" fill="#17375f"/>
+  <circle cx="112" cy="107" r="8" fill="#ff8794"/>
+  <circle cx="140" cy="107" r="8" fill="#ffd36e"/>
+  <circle cx="168" cy="107" r="8" fill="#80d4a8"/>
+  <rect x="112" y="170" width="250" height="19" rx="9.5" fill="#194f9b" opacity="0.18"/>
+  <rect x="112" y="211" width="390" height="16" rx="8" fill="#6f83a2" opacity="0.26"/>
+  <rect x="112" y="244" width="330" height="16" rx="8" fill="#6f83a2" opacity="0.20"/>
+  <rect x="112" y="302" width="228" height="124" rx="18" fill="#eef4ff"/>
+  <path d="M168 345l-23 21 23 21" fill="none" stroke="#194f9b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M284 345l23 21-23 21" fill="none" stroke="#194f9b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M242 331l-32 72" fill="none" stroke="#4a8ce8" stroke-width="10" stroke-linecap="round"/>
+  <rect x="380" y="302" width="250" height="28" rx="14" fill="url(#accent)" opacity="0.95"/>
+  <rect x="380" y="351" width="210" height="16" rx="8" fill="#6f83a2" opacity="0.24"/>
+  <rect x="380" y="382" width="176" height="16" rx="8" fill="#6f83a2" opacity="0.18"/>
+  <rect x="380" y="413" width="134" height="16" rx="8" fill="#6f83a2" opacity="0.18"/>
+</svg>

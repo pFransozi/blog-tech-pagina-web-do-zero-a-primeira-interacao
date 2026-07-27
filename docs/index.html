@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog Tech: projeto didático de HTML, CSS e JavaScript para publicação no GitHub Pages.">
+  <title>Blog Tech</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <a class="brand" href="#inicio" aria-label="Ir para o início">&lt;BlogTech /&gt;</a>
+      <nav aria-label="Navegação principal">
+        <a href="#posts">Posts</a>
+        <a href="#projeto">Projeto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <p class="eyebrow">HTML · CSS · JavaScript</p>
+        <h1 id="hero-title">Meu primeiro blog publicado na web</h1>
+        <p>
+          Um projeto simples para aprender estrutura, estilo, comportamento,
+          Git, GitHub e GitHub Pages de forma incremental.
+        </p>
+        <a class="primary-link" href="#posts">Ver os posts</a>
+      </div>
+      <img src="assets/blog-tech.svg" alt="Ilustração de uma janela de código com elementos de uma página web">
+    </section>
+
+    <section id="posts" class="posts-section" aria-labelledby="posts-title">
+      <div class="section-heading">
+        <p class="eyebrow">Conteúdo</p>
+        <h2 id="posts-title">Posts recentes</h2>
+      </div>
+
+      <div class="post-list">
+        <article class="post-card">
+          <div class="post-icon" aria-hidden="true">🌐</div>
+          <div class="post-content">
+            <p class="post-meta">HTML · Estrutura</p>
+            <h3>Por que uma página precisa de estrutura?</h3>
+            <p>
+              O HTML descreve o significado e a organização do conteúdo. Tags como
+              <code>header</code>, <code>main</code> e <code>article</code> ajudam a separar responsabilidades.
+            </p>
+            <div class="reactions" aria-label="Reações do post">
+              <button class="reaction" type="button" data-reaction="curtir" aria-pressed="false">
+                <span aria-hidden="true">❤️</span>
+                <span class="reaction-label">Curtir</span>
+                <span class="count">0</span>
+              </button>
+              <button class="reaction" type="button" data-reaction="aplaudir" aria-pressed="false">
+                <span aria-hidden="true">👏</span>
+                <span class="reaction-label">Aplaudir</span>
+                <span class="count">0</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="post-card">
+          <div class="post-icon" aria-hidden="true">🎨</div>
+          <div class="post-content">
+            <p class="post-meta">CSS · Layout</p>
+            <h3>Do bloco simples para um layout responsivo</h3>
+            <p>
+              Com CSS podemos controlar contraste, espaçamento, largura e alinhamento.
+              Flexbox ajuda a organizar elementos sem perder a adaptação a telas menores.
+            </p>
+            <div class="reactions" aria-label="Reações do post">
+              <button class="reaction" type="button" data-reaction="curtir" aria-pressed="false">
+                <span aria-hidden="true">❤️</span>
+                <span class="reaction-label">Curtir</span>
+                <span class="count">0</span>
+              </button>
+              <button class="reaction" type="button" data-reaction="aplaudir" aria-pressed="false">
+                <span aria-hidden="true">👏</span>
+                <span class="reaction-label">Aplaudir</span>
+                <span class="count">0</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="post-card">
+          <div class="post-icon" aria-hidden="true">⚡</div>
+          <div class="post-content">
+            <p class="post-meta">JavaScript · Interação</p>
+            <h3>Transformando clique em comportamento</h3>
+            <p>
+              O JavaScript encontra os botões, registra eventos e altera a página.
+              Aqui, cada reação funciona de forma independente e pode ser ativada ou removida.
+            </p>
+            <div class="reactions" aria-label="Reações do post">
+              <button class="reaction" type="button" data-reaction="curtir" aria-pressed="false">
+                <span aria-hidden="true">❤️</span>
+                <span class="reaction-label">Curtir</span>
+                <span class="count">0</span>
+              </button>
+              <button class="reaction" type="button" data-reaction="aplaudir" aria-pressed="false">
+                <span aria-hidden="true">👏</span>
+                <span class="reaction-label">Aplaudir</span>
+                <span class="count">0</span>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projeto" class="project-note" aria-labelledby="project-title">
+      <div>
+        <p class="eyebrow">Próximo passo</p>
+        <h2 id="project-title">Do computador local para o GitHub Pages</h2>
+      </div>
+      <p>
+        Este site é estático: HTML estrutura, CSS apresenta e JavaScript adiciona comportamento.
+        O repositório guarda o histórico; o GitHub Pages transforma os arquivos da pasta
+        <code>docs/</code> em um endereço público.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto didático · HTML + CSS + JavaScript + GitHub Pages</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

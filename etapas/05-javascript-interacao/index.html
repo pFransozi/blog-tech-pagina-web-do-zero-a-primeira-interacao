@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Tech</title>
+</head>
+<body>
+  <h1>Meu blog tech</h1>
+  <button>❤️ <span>0</span></button>
+
+  <script>
+    const botao = document.querySelector("button");
+    botao.addEventListener("click", botaoClicado);
+
+    function botaoClicado() {
+      const texto = botao.querySelector("span");
+      texto.textContent++;
+    }
+  </script>
+</body>
+</html>
